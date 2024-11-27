@@ -39,7 +39,6 @@
 
     <dependencies>
         <!-- 服务配置注册相关 -->
-        <!-- 2.x 的 nacos-client 有问题，启动报缺失类，先用 1.4.7 ，等官方解决后再改回 2.x -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
@@ -47,28 +46,11 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-            <!--            <exclusions>-->
-            <!--                <exclusion>-->
-            <!--                    <groupId>com.alibaba.nacos</groupId>-->
-            <!--                    <artifactId>nacos-client</artifactId>-->
-            <!--                </exclusion>-->
-            <!--            </exclusions>-->
         </dependency>
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-            <!--            <exclusions>-->
-            <!--                <exclusion>-->
-            <!--                    <groupId>com.alibaba.nacos</groupId>-->
-            <!--                    <artifactId>nacos-client</artifactId>-->
-            <!--                </exclusion>-->
-            <!--            </exclusions>-->
         </dependency>
-        <!--        <dependency>-->
-        <!--            <groupId>com.alibaba.nacos</groupId>-->
-        <!--            <artifactId>nacos-client</artifactId>-->
-        <!--            <version>1.4.7</version>-->
-        <!--        </dependency>-->
 
         <!-- 测试相关 -->
         <dependency>
