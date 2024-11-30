@@ -19,6 +19,7 @@
 
         <framework-common.version>0.0.1-SNAPSHOT</framework-common.version>
         <framework-redis.version>0.0.1-SNAPSHOT</framework-redis.version>
+        <framework-mysql.version>0.0.1-SNAPSHOT</framework-mysql.version>
         <framework-security.version>0.0.1-SNAPSHOT</framework-security.version>
 
         <aspectj.version>1.9.7</aspectj.version>
@@ -126,6 +127,11 @@
                 <groupId>net.hwyz.iov.cloud.framework</groupId>
                 <artifactId>framework-redis-starter</artifactId>
                 <version>${framework-redis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.hwyz.iov.cloud.framework</groupId>
+                <artifactId>framework-mysql-starter</artifactId>
+                <version>${framework-mysql.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.hwyz.iov.cloud.framework</groupId>
