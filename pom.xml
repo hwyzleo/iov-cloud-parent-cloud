@@ -18,7 +18,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <framework-common.version>0.0.1-SNAPSHOT</framework-common.version>
-        <framework-exception.version>0.0.1-SNAPSHOT</framework-exception.version>
+        <framework-web.version>0.0.1-SNAPSHOT</framework-web.version>
         <framework-redis.version>0.0.1-SNAPSHOT</framework-redis.version>
         <framework-mysql.version>0.0.1-SNAPSHOT</framework-mysql.version>
         <framework-security.version>0.0.1-SNAPSHOT</framework-security.version>
@@ -129,8 +129,8 @@
             </dependency>
             <dependency>
                 <groupId>net.hwyz.iov.cloud.framework</groupId>
-                <artifactId>framework-exception-starter</artifactId>
-                <version>${framework-exception.version}</version>
+                <artifactId>framework-web-starter</artifactId>
+                <version>${framework-web.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.hwyz.iov.cloud.framework</groupId>
