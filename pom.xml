@@ -124,7 +124,7 @@
             <!-- 框架相关 -->
             <dependency>
                 <groupId>net.hwyz.iov.cloud.framework</groupId>
-                <artifactId>framework-common-starter</artifactId>
+                <artifactId>framework-common</artifactId>
                 <version>${framework-common.version}</version>
             </dependency>
             <dependency>
