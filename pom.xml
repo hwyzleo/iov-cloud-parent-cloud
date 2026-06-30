@@ -43,6 +43,7 @@
         <mapstruct.version>1.4.2.Final</mapstruct.version>
         <mybatis-plus.version>3.5.3.1</mybatis-plus.version>
         <mysql.version>8.0.32</mysql.version>
+        <nacos-client.version>2.3.2</nacos-client.version>
         <pagehelper.version>2.0.0</pagehelper.version>
         <poi.version>4.1.2</poi.version>
         <spring-boot.version>3.0.2</spring-boot.version>
@@ -67,6 +68,11 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-client</artifactId>
+            <version>${nacos-client.version}</version>
         </dependency>
 
         <!-- 测试相关 -->
