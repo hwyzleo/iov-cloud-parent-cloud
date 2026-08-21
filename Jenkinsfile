@@ -7,6 +7,7 @@ pipeline {
     }
 
     tools {
+        jdk   'temurin-17'
         maven 'M3'
     }
 
