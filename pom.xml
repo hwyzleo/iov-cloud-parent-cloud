@@ -31,7 +31,10 @@
         <caffeine.version>2.8.8</caffeine.version>
         <commons-io.version>2.13.0</commons-io.version>
         <disruptor.version>3.3.7</disruptor.version>
-        <druid.version>1.2.8</druid.version>
+        <!-- FW-MYSQL-DSN-CR-002：Boot 3 下旧 druid-spring-boot-starter 无法注册自动装配（制品缺失 AutoConfiguration.imports），
+             替换为官方 druid-spring-boot-3-starter；1.2.18/1.2.19 同样缺失 imports 文件（T-01 实证确认回退 Hikari），
+             故锁定 1.2.20（首个含 AutoConfiguration.imports 的版本，基于 Boot 3.0.6 构建，不机械追最新）。 -->
+        <druid.version>1.2.20</druid.version>
         <fastjson.version>2.0.53</fastjson.version>
         <freemarker.version>2.3.31</freemarker.version>
         <grpc.version>1.81.0</grpc.version>
@@ -237,9 +240,15 @@
                 <artifactId>freemarker</artifactId>
                 <version>${freemarker.version}</version>
             </dependency>
+            <!-- FW-MYSQL-DSN-CR-002：官方 Boot 3 starter + 同版本 Druid 核心显式管理（防止未经解释的版本覆盖） -->
             <dependency>
                 <groupId>com.alibaba</groupId>
-                <artifactId>druid-spring-boot-starter</artifactId>
+                <artifactId>druid-spring-boot-3-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
                 <version>${druid.version}</version>
             </dependency>
 
